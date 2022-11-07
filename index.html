@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locker UI</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <form action="" id="locker">
+            <div class="logo-container">
+                <img src="./ideas/dcm-transparente-2.png" alt="logo" class="dcm-logo">
+            </div>
+            <div class="input">
+                <label for="token">Token</label>
+                <input type="password" name="token" id="token" class="token-success token-none" maxlength="4" readonly>
+            </div>
+            <div class="buttons">
+                    <div class="one btn">1</div>
+                    <div class="two btn">2</div>
+                    <div class="three btn">3</div>
+                    <div class="four btn">4</div>
+                    <div class="five btn">5</div>
+                    <div class="six btn">6</div>
+                    <div class="seven btn">7</div>
+                    <div class="eight btn">8</div>
+                    <div class="nine btn">9</div>
+                    <div class="regress-container btn">
+                        <span class="regress-btn">
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </span>
+                    </div>
+                    <div class="zero btn">0</div>
+                    <div class="btn-submit-container btn">
+                        <button class="btn-submit" type="button">
+                            <i class="fa-solid fa-check fa-5x"></i>
+                        </button>
+                    </div>
+                    <div class="none" id="success">
+                        Bien
+                    </div>
+                    <div class="none" id="error">
+                        Mal
+                    </div>
+            </div>
+        </form>
+    </div>
+    <script src="https://kit.fontawesome.com/111fe41385.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>

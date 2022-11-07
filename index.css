@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    width: 800px;
+    height: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+    background: linear-gradient(40deg, #000000, #2D3436);
+    color: #EDEDED;
+}
+
+#locker {
+    border: 2px solid #000;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+.logo-container {
+    position: absolute;
+    width: 100px;
+    height: 88px;
+    left: 0;
+    top: 0;
+    margin: 20px;
+}
+
+.dcm-logo {
+    width: 100%;
+    height: 100%;
+}
+
+.input {
+    font-size: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input #token {
+    font-size: 60px;
+    height: 64px;
+    width: 50%;
+    text-align: center;
+    background: none;
+    border: none;
+    border-radius: 10px;
+    color: #EDEDED;
+}
+
+.token-success {
+    border: 3px solid #3CCF4E;
+}
+
+
+.buttons {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+.btn {
+    font-size: 60px;
+    width: 100%;
+    height: 100%;
+    justify-self: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 90px;
+    transition: all .1s;
+}
+
+.btn:active {
+    background-color: #ededed24;
+}
+
+.btn-submit {
+    width: 100%;
+    height: 100%;
+    color: #EDEDED;
+    background: none;
+    border: none;
+}
+
+#token:focus {
+    border: none;
+}
+
+#success {
+    position: absolute;
+}
+
+#error {
+    position: absolute;
+}
+
+.none {
+    display: none;
+}
