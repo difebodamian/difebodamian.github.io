@@ -110,3 +110,9 @@
 .none {
     display: none;
 }
+
+.pista {
+    position: absolute;
+    top: 0;
+    right: 0;
+}

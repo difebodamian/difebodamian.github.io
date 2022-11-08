@@ -3,7 +3,10 @@ const buttons = document.querySelector(".buttons");
 const submitBtn = document.querySelector(".btn-submit-container");
 const regressBtn = document.querySelector(".regress-container");
 const success = document.querySelector("#success");
-const error = document.querySelector("#error")
+const error = document.querySelector("#error");
+const pista = document.querySelector(".pista");
+
+const token = generateToken();
 
 buttons.addEventListener("click", (e) => {
 addEventListenerFunction(e);
@@ -64,7 +67,7 @@ function regress() {
 
 function submit() {
     const value = inputToken.getAttribute("value");
-    inputToken.getAttribute("value").length === 4 ? value === "1234" ? successCode()
+    inputToken.getAttribute("value").length === 4 ? value === token ? successCode()
                                                                      : errorCode()
                                                     : console.log("te faltan numeros")
 }
@@ -87,4 +90,17 @@ function errorCode() {
         error.setAttribute("class", "none")
     }, 3000 )
     restartInput();
+}
+
+function generateToken() {
+    const number1 = String(Math.floor(Math.random() * 10));
+    const number2 = String(Math.floor(Math.random() * 10));
+    const number3 = String(Math.floor(Math.random() * 10));
+    const number4 = String(Math.floor(Math.random() * 10));
+    const token = number1 + number2 + number3 + number4;
+    console.log(token);
+    setTimeout( () => {
+        pista.innerText = "Pista: el token es " + token;
+    }, 10000 )
+    return token;
 }
